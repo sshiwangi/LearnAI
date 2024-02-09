@@ -91,6 +91,24 @@ const Roadmap = () => {
               </div>
             </div> */}
 
+          <div className="py-5 px-10 h-full ">
+            <div className="w-full h-full">
+              <div className="flex">
+                <div className="w-1/2"></div>
+                <div className="w-1/2 h-full">
+              <div className="h-1/5 w-full flex border-l-rounded-full border-black">
+                <div className="rounded-full bg-black w-20 h-20 ml-3 text-white flex justify-center items-center text-xl border-8 border-white"> 1</div>
+                <div className="h-full w-20 bg-red">
+                  <img className='flex justify-center items-center h-15 w-full' src={rightarrow}/>
+                </div>
+                <div className="h-[8rem] w-2/3 bg-black">
+
+                </div>
+               </div>
+               </div>
+              </div>
+
+
             {/* <div className="flex">
               <div className="w-1/2 h-full">
                 <div className="h-1/5 w-full flex justify-end flex-row-reverse border-l-rounded-full border-black">
@@ -106,6 +124,7 @@ const Roadmap = () => {
                   </div>
                   <div className="h-[8rem] w-2/3 bg-black"></div>
                 </div>
+
               </div>
               <div className=" w-1/2 "></div>
             </div> */}
@@ -129,6 +148,23 @@ const Roadmap = () => {
               </div>
             </div> */}
 
+              <div className=" w-1/2 "></div>
+              </div>
+
+                  <div className="flex">
+                <div className="w-1/2"></div>
+                <div className="w-1/2 h-full">
+              <div className="h-1/5 w-full flex border-l-rounded-full border-black">
+                <div className="rounded-full bg-black w-20 h-20 ml-3 text-white flex justify-center items-center text-xl border-8 border-white"> 1</div>
+                <div className="h-full w-20 bg-red">
+                  <img className='flex justify-center items-center h-15 w-full' src={rightarrow}/>
+                </div>
+                <div className="h-[8rem] w-2/3 bg-black"></div>
+               </div>
+               </div>
+              </div>
+
+
             {/* <div className="flex">
               <div className="w-1/2 h-full">
                 <div className="h-1/5 w-full flex justify-end flex-row-reverse border-l-rounded-full border-black">
@@ -143,7 +179,7 @@ const Roadmap = () => {
                     />
                   </div>
                   <div className="h-[8rem] w-2/3 bg-black"></div>
-                </div>
+
               </div>
               <div className=" w-1/2 "></div>
             </div> */}
@@ -166,10 +202,30 @@ const Roadmap = () => {
                 </div>
               </div>
             </div> */}
+
+                <div className="h-[8rem] w-2/3 bg-black"></div>
+                </div>
+                </div>
+              <div className=" w-1/2 "></div>
+              </div>
+
+                 <div className="flex">
+                <div className="w-1/2"></div>
+                <div className="w-1/2 h-full">
+              <div className="h-1/5 w-full flex border-l-rounded-full border-black">
+                <div className="rounded-full bg-black w-20 h-20 ml-3 text-white flex justify-center items-center text-xl border-8 border-white"> 1</div>
+                <div className="h-full w-20 bg-red">
+                  <img className='flex justify-center items-center h-15 w-full' src={rightarrow}/>
+                </div>
+                <div className="h-[8rem] w-2/3 bg-black"></div>
+               </div>
+               </div>
+              </div>
+            </div>
+
           </div>
+         </div>
         </div>
-      </div>
-    </div>
   );
 };
 

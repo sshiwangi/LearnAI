@@ -23,20 +23,22 @@ const Roadmap = () => {
         <h1 className="text-6xl font-bold mb-4 flex text-center w-[600px] items-center">
           Your Ultimate Study Roadmap for Academic Excellence
         </h1>
-        <div className="flex items-center py-10">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search videos..."
-            className="border border-gray-300 px-3 py-2 w-full mr-2"
-          />
-          <button
-            onClick={handleSearch}
-            className="bg-blue-500 text-white px-4 py-2 rounded"
-          >
-            Search
-          </button>
+        <div className="flex items-center py-10 w-full justify-center">
+          <div className="w-1/2 flex items-center justify-center">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Type your query here"
+              className="border border-gray-300 px-3 py-2 w-full mr-2"
+            />
+            <button
+              onClick={handleSearch}
+              className="bg-blue-500 text-white px-4 py-2 rounded"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
       {/* <div className="relative">

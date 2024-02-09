@@ -18,7 +18,7 @@ const Roadmap = () => {
   };
 
   return (
-    <div className=" bg-gray-200 ">
+    <div className=" bg-custom-bg text-white ">
       <div className=" h-screen flex justify-center items-center flex-col">
         <h1 className="text-6xl font-bold mb-4 flex text-center w-[600px] items-center">
           Your Ultimate Study Roadmap for Academic Excellence

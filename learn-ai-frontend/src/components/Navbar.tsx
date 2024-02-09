@@ -6,10 +6,10 @@ import LoginDialogue from "./LoginDialogue";
 import { Link } from "react-router-dom";
 
 const navigation = [
+  { name: "Roadmap", href: "/roadmap", current: false },
   { name: "Video Chat", href: "/videochat", current: false },
   { name: "Docs Chat", href: "/pdf", current: false },
   { name: "Whatsapp", href: "/whatsapp", current: false },
-  { name: "Roadmap", href: "/roadmap", current: false },
 ];
 
 function classNames(...classes: (string | undefined | boolean)[]) {
@@ -45,8 +45,8 @@ export default function Navbar() {
               </div>
               <div className="flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link to="/">
-                    <img className="h-8 w-auto" src={logo} alt="Your Company" />
+                  <Link className="text-white font-bold" to="/">
+                    Learn.<span className="text-custom-main">AI</span>
                   </Link>
                 </div>
               </div>

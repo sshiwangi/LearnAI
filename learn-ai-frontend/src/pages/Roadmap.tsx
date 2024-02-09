@@ -62,7 +62,6 @@ const Roadmap = () => {
           </div>  
     </div>*/}
       <div className="w-full h-full">
-
           <div className="py-5 px-10 h-full ">
             <div className="w-full h-full">
               <div className="flex">
@@ -78,18 +77,7 @@ const Roadmap = () => {
                 </div>
                </div>
                </div>
-=======
-        <div className="py-5 px-10 h-full">
-          <div className="w-full h-full">
-            <div className="h-1/5 w-full  flex justify-center ">
-              <div className="rounded-full bg-black w-20 h-20 text-white flex justify-center items-center text-xl border-8 border-white">
-                {" "}
-                1
-
               </div>
-              <div className="h-1 w-5 bg-red"></div>
-            </div>
-
 
                 <div className="flex">
                   <div className="w-1/2 h-full"> 
@@ -102,16 +90,7 @@ const Roadmap = () => {
                 </div>
                 </div>
               <div className=" w-1/2 "></div>
-
-            <div className="h-1/5 w-full flex justify-center ">
-              <div className=" rounded-full bg-black w-20 h-20 text-white flex justify-center items-center text-xl border-8 border-white">
-                {" "}
-                2
-
               </div>
-              <div className="h-1 w-5 bg-red"></div>
-            </div>
-
 
                   <div className="flex">
                 <div className="w-1/2"></div>
@@ -124,15 +103,7 @@ const Roadmap = () => {
                 <div className="h-[8rem] w-2/3 bg-black"></div>
                </div>
                </div>
-
-            <div className="h-1/5 w-full  flex justify-center ">
-              <div className=" rounded-full bg-black w-20 h-20 text-white flex justify-center items-center text-xl border-8 border-white">
-                3
-
               </div>
-              <div className="h-1 w-5 bg-red"></div>
-            </div>
-
 
                   <div className="flex">
                   <div className="w-1/2 h-full"> 
@@ -145,15 +116,7 @@ const Roadmap = () => {
                 </div>
                 </div>
               <div className=" w-1/2 "></div>
-
-            <div className="h-1/5 w-full  flex justify-center ">
-              <div className=" rounded-full bg-black w-20 h-20 text-white flex justify-center items-center text-xl border-8 border-white">
-                4
-
               </div>
-              <div className="h-1 w-5 bg-red"></div>
-            </div>
-
 
                  <div className="flex">
                 <div className="w-1/2"></div>
@@ -166,18 +129,11 @@ const Roadmap = () => {
                 <div className="h-[8rem] w-2/3 bg-black"></div>
                </div>
                </div>
-
-            <div className="h-1/5 w-full  flex justify-center ">
-              <div className=" rounded-full bg-black w-20 h-20 text-white flex justify-center items-center text-xl border-8 border-white">
-                5
-
               </div>
-              <div className="h-1 w-5 bg-red"></div>
             </div>
           </div>
+         </div>
         </div>
-      </div>
-    </div>
   );
 };
 

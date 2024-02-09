@@ -3,7 +3,7 @@ import SearchBar from "../components/SearchBar";
 import Prompt from "../components/Prompt";
 import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
 
-function VideoUpload() {
+function VideoChat() {
   const [videoText, setVideoText] = useState<string>("");
   const [videoId, setVideoId] = useState<string>("");
 
@@ -37,4 +37,4 @@ function VideoUpload() {
   );
 }
 
-export default VideoUpload;
+export default VideoChat;

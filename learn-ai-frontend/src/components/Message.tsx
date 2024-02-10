@@ -10,13 +10,14 @@ interface MessageProps {
 export default function Message({ role, content, answer }: MessageProps) {
   return (
     <div>
-      <div>
-        <img src={role === "assistant" ? bot : user} alt="profile avatar" />
+      <div className="flex items-center">
+        <img className="w-12 h-12" src={role === "assistant" ? bot : user} alt="profile avatar" />
+         <span className="ml-1 text-lg">{role === "assistant" ? "Bot" : "You"}</span>
       </div>
       <div>
-        <p>{content}</p>
+        <p className="  mb-2">{content}</p>
         {role === "assistant" && answer && (
-          <p className="font-bold">Answer: {answer}</p>
+          <p className="font-lg mb-4">Answer: {answer}</p>
         )}
       </div>
     </div>

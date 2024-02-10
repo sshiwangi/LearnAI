@@ -20,7 +20,7 @@ export default function Input({
         onChange={onChange}
       />
       <button
-        className="rounded-lg border border-transparent bg-custom-main px-3 py-1 text-slate-200 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        className="rounded-lg ml-2 border border-transparent bg-custom-main px-3 py-1 text-slate-200 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
         onClick={onClick}
       >
         Search

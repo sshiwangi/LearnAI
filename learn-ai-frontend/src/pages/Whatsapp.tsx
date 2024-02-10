@@ -1,5 +1,4 @@
-import React from "react";
-import Scan from "../assets/whatsapp.jpeg";
+import Scan from "../assets/qr cropped 1.png";
 function Whatsapp() {
   return (
     <div className="bg-custom-bg bg-repeat bg-[url('https://fffuel.co/images/sssvg/grid.svg')] px-10 sm:px-6 lg:px-8">

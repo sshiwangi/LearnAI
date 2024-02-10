@@ -7,6 +7,7 @@ import ChatWithVideo from "./pages/ChatWithVideo";
 import VideoChat from "./pages/VideoChat";
 import Whatsapp from "./pages/Whatsapp";
 import DocsChat from "./pages/DocsChat";
+import Home from "./pages/Home";
 import FileUpload from "./pages/Fileupload";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/chatwithvideo" element={<ChatWithVideo />} />
         <Route path="/whatsapp" element={<Whatsapp />} />

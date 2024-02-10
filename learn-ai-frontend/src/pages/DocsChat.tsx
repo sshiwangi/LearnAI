@@ -1,5 +1,6 @@
 // import Prompt from "../components/Prompt";
 import { useLocation } from "react-router-dom";
+import Prompt from "../components/Prompt";
 
 function DocsChat() {
   const location = useLocation();
@@ -14,7 +15,14 @@ function DocsChat() {
         )}
     </div>
     </div>
-    <div className='flex mt-10 gap-8 w-full px-8'></div>
+    <div className='flex mt-10 gap-8 w-full px-8'>
+       <div className=' w-full flex justify-between flex-col p-3'>
+
+            <div></div>
+            <Prompt text={"Chat with pdf"} id={""} />
+
+         </div>
+    </div>
     </div>
   );
 }

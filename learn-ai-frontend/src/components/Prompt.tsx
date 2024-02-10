@@ -81,9 +81,9 @@ function Prompt({ text, id }: PromptProps) {
   }
 
   return (
-    <div className="bg-custom-promptbg p-5 w-1/2 rounded-md">
+    <div className="bg-custom-promptbg p-5 w-full rounded-md">
       <div>
-        <h3>start Chatting</h3>
+        {/* <h3>start Chatting</h3> */}
         <div>
           {messages.map((el: MessageItem, i: number) => (
             <Message

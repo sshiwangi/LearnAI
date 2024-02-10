@@ -4,7 +4,6 @@ import Prompt from "../components/Prompt";
 import { useLocation } from "react-router-dom";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
 import { getVideoId } from "./Roadmap";
-import { useParams } from "react-router-dom";
 
 function ChatWithVideo() {
   const [videoId, setVideoId] = useState("");

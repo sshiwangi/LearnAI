@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/aicrafttube-log.png";
 import LoginDialogue from "./LoginDialogue";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   { name: "Roadmap", href: "/roadmap", current: false },
@@ -17,6 +17,7 @@ function classNames(...classes: (string | undefined | boolean)[]) {
 }
 
 export default function Navbar() {
+  const location = useLocation();
   const [dialogueOpen, setDialogueOpen] = useState(false);
 
   function showLoginDialogue() {
@@ -57,8 +58,8 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current
-                          ? "bg-gray-900 text-white"
+                        location.pathname === item.href
+                          ? " text-white bg-custom-main"
                           : "text-gray-300 hover:bg-gray-700 hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
@@ -70,7 +71,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div
-                onClick={showLoginDialogue}
+                // onClick={showLoginDialogue}
                 className="absolute inset-y-0 text-white right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hover:cursor-pointer"
               >
                 {/* <button

@@ -26,7 +26,7 @@ function VideoChat() {
           <SearchBar onVideoLoad={handleVideoLoad} />
         </div>
       ) : (
-        <div className="flex flex-col items-center w-[750px]">
+        <div className="flex gap-3">
           <YouTubeVideoPlayer videoId={videoId} />
           <div className="w-[650px] mt-5 text-white">
             {/* Prompt container */}

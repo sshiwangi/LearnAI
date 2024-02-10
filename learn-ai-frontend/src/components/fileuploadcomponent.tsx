@@ -1,11 +1,13 @@
-import React, { useRef, ChangeEvent } from 'react';
-import Image from '../assets/Import_Pdf.png';
+import React, { useRef, ChangeEvent } from "react";
+import Image from "../assets/Import_Pdf.png";
 
 interface FileUploadComponentProps {
   onFileUpload: (file: File) => void; // Callback function to handle file upload
 }
 
-const FileUploadComponent: React.FC<FileUploadComponentProps> = ({ onFileUpload }) => {
+const FileUploadComponent: React.FC<FileUploadComponentProps> = ({
+  onFileUpload,
+}) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Function to handle file input change
@@ -37,4 +39,3 @@ const FileUploadComponent: React.FC<FileUploadComponentProps> = ({ onFileUpload 
 };
 
 export default FileUploadComponent;
-

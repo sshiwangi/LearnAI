@@ -14,6 +14,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/chatwithvideo" element={<ChatWithVideo />} />
         <Route path="/whatsapp" element={<Whatsapp />} />

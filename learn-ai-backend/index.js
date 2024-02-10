@@ -2,13 +2,14 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 const OpenAI = require("openai");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
 const port = 3000;
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.API_KEY,
 });
 
 app.use(express.json());

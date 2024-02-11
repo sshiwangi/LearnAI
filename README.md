@@ -2,8 +2,6 @@
 
 ## Introduction
 
-Welcome to LearnAI, an innovative project designed to enhance your learning experience in artificial intelligence (AI). LearnAI provides a platform where users can access educational content, engage in interactive sessions, and stay updated on the latest AI technologies. Whether you are a beginner or an advanced learner, LearnAI is here to guide you on your AI journey.
-
 
 ## Problem Statement
 

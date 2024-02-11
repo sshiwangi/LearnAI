@@ -2,14 +2,7 @@
 
 ## Introduction
 
-
 ## Problem Statement
-
-Traditional learning methods may not always align with the dynamic field of AI. LearnAI addresses this by providing a platform tailored to AI education, ensuring that users receive relevant and up-to-date information. The project aims to overcome challenges such as:
-
-- Lack of specialized AI learning resources.
-- Limited interactivity in AI learning platforms.
-- Difficulty in staying updated with the rapidly evolving AI landscape.
 
 ## Features
 

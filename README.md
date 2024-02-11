@@ -1,8 +1,9 @@
-# LearnAI Project Readme
+# LearnAI Project
+![Screenshot 2024-02-11 080915](https://github.com/sshiwangi/LearnAI/assets/77545230/fcaac78a-245c-497b-bae7-9cf1619a770d)
+
 
 ## Introduction
-
-## Problem Statement
+Solves information overload on YouTube by providing personalized learning video recommendations based on individual preferences and needs. Streamlines the search process, making it easier for users to find relevant and high-quality educational content, ultimately saving time and enhancing the learning experience
 
 ## Features
 

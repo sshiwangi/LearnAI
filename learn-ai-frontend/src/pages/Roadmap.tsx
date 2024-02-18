@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import Flag from '../assets/flag.png';
 import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
-import rightarrow from "../assets/right-arrow.png";
-import leftarrow from "../assets/left-arrow.png";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
 import { useNavigate } from "react-router-dom";
+
+
 
 interface Video {
   videoId: string;
@@ -78,6 +78,7 @@ const Roadmap = () => {
       // Handle the error, you might want to display an error message to the user
     }
   };
+
   return (
     <div className=" bg-custom-bg text-white ">
       <div className=" py-20 flex justify-center items-center flex-col">

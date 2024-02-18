@@ -23,7 +23,6 @@ const Roadmap = () => {
 
   const handleChatClick = async (videoUrl: string) => {
     try {
-      setLoading(true);
       // Fetch transcript using your fetchYouTubeTranscript function
       const { transcriptText, videoId } = await fetchYouTubeTranscript(
         videoUrl
@@ -45,6 +44,7 @@ const Roadmap = () => {
 
   const handleSearchClick = async () => {
     try {
+      setLoading(true);
       // Make a POST request to the recommendation API
       const response = await fetch(
         "http://localhost:3000/youtube/recommend-videos",
@@ -69,6 +69,7 @@ const Roadmap = () => {
       console.log(recommendedVideosData);
       // Set the recommended videos array
       setRecommendedVideos(recommendedVideosData);
+      setLoading(false);
     } catch (error) {
       console.error(
         "Error fetching recommended videos:",
@@ -79,8 +80,8 @@ const Roadmap = () => {
   };
 
   return (
-    <div className=" bg-custom-bg pb-20 text-white ">
-      <div className=" py-40 flex justify-center items-center flex-col">
+    <div className=" bg-custom-bg text-white ">
+      <div className=" py-20 flex justify-center items-center flex-col">
         <h1 className="text-6xl font-bold mb-4 flex text-center w-[600px] items-center">
           Your Ultimate Study Roadmap for Academic Excellence
         </h1>
@@ -105,26 +106,28 @@ const Roadmap = () => {
 
       <div className="w-full h-full">
         <div className="py-5 px-10 h-full ">
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <div className="w-full h-full flex flex-col gap-6 items-center">
-              {recommendedVideos.map((video: Video, index) => (
-                 
-                <div key={index} className="flex gap-16 items-center">
-                  <YouTubeVideoPlayer videoId={getVideoId(video.url)} />
-            
-                  <button
-                    onClick={() => handleChatClick(video.url)}
-                    className="text-white h-[100px] rounded-md text-3xl font-bold w-[200px] bg-custom-main"
-                  >
-                    Chat
-                  </button>
-                </div>
-      
-              ))}
+          {loading && (
+            <div className="text-4xl text-center text-white font-bold">
+              Loading...
             </div>
           )}
+          <div className="w-full h-full flex flex-col gap-6 items-center">
+            {recommendedVideos.map((video: Video, index) => (
+              <div
+                key={index}
+                className="flex gap-16 justify-between items-center"
+              >
+                <YouTubeVideoPlayer videoId={getVideoId(video.url)} />
+
+                <button
+                  onClick={() => handleChatClick(video.url)}
+                  className="text-white ml-4 p-2 h-[60px] w-[180px] rounded-full text-2xl font-bold bg-custom-main"
+                >
+                  Chat
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

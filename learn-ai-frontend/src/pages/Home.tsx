@@ -199,7 +199,15 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2">
             <div className="bg-gray-300 h-full overflow-hidden rounded-tl-xl rounded-bl-xl">
-              <div className="flex justify-center items-center h-full"></div>
+              <div className="flex justify-center items-center h-full">
+                 <iframe 
+        width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/lhgEQvd4jpU?si=QFfKgPC3VdgvQFPw" 
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" > 
+      </iframe>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
+import YouTubeVideoPlayerVideoChat from "../components/YoutubeVideoPlayerVideoChat";
 import Prompt from "../components/Prompt";
 import { useLocation } from "react-router-dom";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
@@ -40,7 +40,7 @@ function ChatWithVideo() {
 
   return (
     <div className="flex p-10 bg-custom-bg">
-      <YouTubeVideoPlayer videoId={getVideoId(videoUrl)} />
+      <YouTubeVideoPlayerVideoChat videoId={getVideoId(videoUrl)} />
       <div className="w-full flex justify-center text-white">
         <Prompt text={videoText} id={videoId} />
       </div>

@@ -63,10 +63,10 @@ function Prompt({ text }: PromptProps) {
   }
 
   return (
-    <div className="bg-custom-promptbg text-white p-5 w-full rounded-md">
-      <div>
+    <div className="bg-custom-promptbg h-full text-white p-5 w-full rounded-md">
+      <div className="flex h-full flex-col">
         {/* <h3>start Chatting</h3> */}
-        <div>
+        <div className="h-full">
           {messages.map((el: MessageItem, i: number) => (
             <Message
               key={i}
@@ -77,7 +77,7 @@ function Prompt({ text }: PromptProps) {
           ))}
         </div>
         <Input
-          styles="w-full rounded-lg border border-slate-300 bg-slate-200 p-3 text-sm text-slate-800 shadow-md focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 dark:border-slate-200/10 dark:bg-slate-800 dark:text-slate-200 dark:placeholder-slate-400 dark:focus:border-blue-600 sm:text-base"
+          styles="w-[87%] placeholder-[#A4A1A1] border-none bg-transparent outline-none p-3 text-sm text-white  focus:outline-none dark:border-slate-200/10 dark:bg-slate-800 dark:text-slate-200 dark:placeholder-slate-400 dark:focus:border-blue-600 sm:text-base"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onClick={input ? handleSubmit : undefined}

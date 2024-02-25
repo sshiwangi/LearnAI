@@ -1,3 +1,4 @@
+import search from "../assets/Email Send.png";
 interface InputProps {
   styles: string;
   value: string;
@@ -12,18 +13,18 @@ export default function Input({
   onClick = () => {},
 }: InputProps) {
   return (
-    <div className="flex">
+    <div className="flex rounded-md items-center w-full bg-gradient-to-b from-[#525050] to-[#1F1F1F]">
       <input
         className={styles}
-        placeholder="Your prompt here..."
+        placeholder="Ask your question here..."
         value={value}
         onChange={onChange}
       />
       <button
-        className="rounded-lg ml-2 border border-transparent bg-custom-main px-3 py-1 text-slate-200 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+        className="rounded-lg h-[36px] ml-2 border border-transparent bg-[#575454] px-3 py-1 "
         onClick={onClick}
       >
-        Search
+        <img className="h-[20px]" src={search} alt="" />
       </button>
     </div>
   );

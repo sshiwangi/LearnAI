@@ -21,17 +21,16 @@ export default function Message({ role, content, answer }: MessageProps) {
         </span>
       </div> */}
       <div>
-        <p className=" flex items-center font-bold mb-2">
-          <img src={user} className="h-[50px]" alt="" />
-          <span className="text-custom-main text-xl ">You </span> : {content}
+        <p className=" flex gap-2 items-center mb-2">
+          <img src={user} className="h-[40px]" alt="" />
+          <span className=" "> {content}</span>
         </p>
         {role === "assistant" && answer && (
           <p className=" mb-4 ">
-            <div className="flex flex gap-2 text-xl font-bold items-center">
-              <img src={bot} className="h-[50px]" alt="" />{" "}
-              <span className="text-custom-main"> LearnAI</span>:
+            <div className="flex gap-2">
+              <img src={bot} className="h-[40px]" alt="" />{" "}
+              <span className=""> {answer}</span>
             </div>
-            <div> {answer}</div>
           </p>
         )}
       </div>

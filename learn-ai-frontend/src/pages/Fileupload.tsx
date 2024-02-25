@@ -20,7 +20,7 @@ const FileUpload = () => {
       // Navigate to the second page after file upload
       navigate("/docschat", { state: { uploadedFile } });
     }
-  }, [uploadedFile, navigate]);
+  }, [uploadedFile]);
 
   return (
     <div className="bg-custom-bg">

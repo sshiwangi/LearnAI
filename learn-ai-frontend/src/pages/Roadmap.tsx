@@ -115,7 +115,7 @@ const Roadmap = () => {
             {recommendedVideos.map((video: Video, index) => (
               <div
                 key={index}
-                className="flex gap-16 justify-between items-center"
+               className="flex gap-16 justify-between items-center"
               >
                 <YouTubeVideoPlayer videoId={getVideoId(video.url)} />
 

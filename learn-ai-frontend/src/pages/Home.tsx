@@ -211,6 +211,155 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        <div className="md:hidden">
+           <div className="grid grid-cols-1 gap-y-6">
+             <div className="mb-6 p-10">
+               <h1 className="text-3xl md:text-4xl font-bold text-white">
+                 Start your smarter learning journey today
+              </h1>
+             </div>
+             <div className="bg-gray-300 h-96 overflow-hidden ">
+               <div className="flex justify-center items-center h-full">                
+                 <iframe 
+        width="100%" 
+        height="100%" 
+        src="https://www.youtube.com/embed/lhgEQvd4jpU?si=QFfKgPC3VdgvQFPw" 
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" > 
+      </iframe>
+              </div>
+            </div>
+            <div className="p-10 space-y-8">
+              <div className="w-full">
+                <div>
+                  <div className="font-bold text-lg text-white mb-4">
+                    AI guided learning recommmendation
+                  </div>
+                  <div className="text-lg text-white">
+                    Tailoring content to your interests for a more personalized
+                    and enriching experience
+                  </div>
+                  <button className="text-base flex justify-center items-center font-semibold leading-7 text-indigo-600 ">
+                    Explore more{" "}
+                    <svg
+                      className="mt-1"
+                      width="14px"
+                      height="14px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.048"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
+                          stroke="#6F53FF"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="w-full">
+                <div>
+                  <div className="font-bold text-lg text-white mb-4">
+                    Whatsapp integration
+                  </div>
+                  <div className="text-lg text-white">
+                    Bringing learning to your fingertips at oyur cinvenience
+                    through your favourite app-WhatsApp
+                  </div>
+                  <button className="text-base flex justify-center items-center font-semibold leading-7 text-indigo-600 ">
+                    Explore more{" "}
+                    <svg
+                      className="mt-1"
+                      width="14px"
+                      height="14px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.048"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
+                          stroke="#6F53FF"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="w-full">
+                <div>
+                  <div className="font-bold text-lg text-white mb-4">
+                    Boost your learning pace
+                  </div>
+                  <div className="text-lg text-white">
+                    Simply paste your URL and receive a quik summary, optimizing
+                    your understanding with ease
+                  </div>
+                  <button className="text-base flex justify-center items-center font-semibold leading-7 text-indigo-600 ">
+                    Explore more{" "}
+                    <svg
+                      className="mt-1"
+                      width="14px"
+                      height="14px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.048"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"
+                          stroke="#6F53FF"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* <div className="bg-custom-bg relative">
         <div className="pt-20 pb-40 relative">

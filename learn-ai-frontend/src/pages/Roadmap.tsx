@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
 import { useNavigate } from "react-router-dom";
-
-
+import roadmapIcon from "../assets/Arrow 1.png";
 
 interface Video {
   videoId: string;
@@ -152,9 +151,13 @@ const Roadmap = () => {
 
             {recommendedVideos.map((video: Video, index) => (
               <>
+                <div>
+                  <img src={roadmapIcon} alt="" />
+                </div>
                 <div className="text-custom-main rounded-full w-10 h-10 flex justify-center items-center text-xl bg-[#1A2025] p-2">
                   {index + 1}
                 </div>
+
                 <div key={index} className="flex w-full justify-center">
                   <YouTubeVideoPlayer
                     videoId={getVideoId(video.url)}

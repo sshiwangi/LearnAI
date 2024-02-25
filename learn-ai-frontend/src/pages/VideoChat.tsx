@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import Prompt from "../components/Prompt";
-import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
+import YouTubeVideoPlayerVideoChat from "../components/YoutubeVideoPlayerVideoChat";
 
 function VideoChat() {
   const [videoText, setVideoText] = useState<string>("");
@@ -12,7 +12,7 @@ function VideoChat() {
     setVideoId(id);
   };
   return (
-    <div className="bg-custom-bg gap-10 py-8 flex flex-col items-center justify-center">
+    <div className="bg-custom-bg gap-10 p-10 flex flex-col items-center justify-center">
       {!videoText ? (
         <div className="text-center flex mt-[5rem] flex-col gap-5 w-full justify-center items-center">
           <h1 className="text-8xl w-[800px] font-bold text-white">
@@ -26,9 +26,9 @@ function VideoChat() {
           <SearchBar onVideoLoad={handleVideoLoad} />
         </div>
       ) : (
-        <div className="flex gap-3">
-          <YouTubeVideoPlayer videoId={videoId} />
-          <div className="w-[650px] mt-5 text-white">
+        <div className="flex gap-3 w-full justify-center">
+          <YouTubeVideoPlayerVideoChat videoId={videoId} />
+          <div className="w-1/2 flex justify-center text-white">
             {/* Prompt container */}
             <Prompt text={videoText} id={videoId} />
           </div>

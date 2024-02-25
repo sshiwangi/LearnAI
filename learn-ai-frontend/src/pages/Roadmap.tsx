@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import Flag from '../assets/flag.png';
 import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
-import rightarrow from "../assets/right-arrow.png";
-import leftarrow from "../assets/left-arrow.png";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
 import { useNavigate } from "react-router-dom";
+
+
 
 interface Video {
   videoId: string;
@@ -81,6 +81,7 @@ const Roadmap = () => {
       // Handle the error, you might want to display an error message to the user
     }
   };
+
   return (
     <div className=" bg-custom-bg text-white ">
       <div className=" pt-20 pb-5 flex justify-center items-center flex-col">
@@ -160,7 +161,6 @@ const Roadmap = () => {
                     buttonStyle="text-white p-2 w-[640px] rounded-md text-xl font-bold bg-custom-main"
                     buttonEvent={() => handleChatClick(video.url)}
                   />
-
                   {/* <button
                   // onClick={() => handleChatClick(video.url)}
                   // className="text-white ml-4 p-2 h-[60px] w-[180px] rounded-full text-2xl font-bold bg-custom-main"

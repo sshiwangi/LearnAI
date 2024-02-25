@@ -1,30 +1,29 @@
 import Scan from "../assets/qr cropped 1.png";
-import { UserIcon, ClockIcon, LanguageIcon } from '@heroicons/react/24/outline'
+import { UserIcon, ClockIcon, LanguageIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import mobileView from "../assets/whatsapp-pic.png";
 function Whatsapp() {
-
   const features = [
-  {
-    name: 'Personalised content',
-    description:
-      'BotsApp adapts to your learning style, providing tailored responses and suggestions based on your preferences and progress',
-    icon: UserIcon,
-  },
-  {
-    name: 'Round-the-Clock Availability',
-    description:
-      'Experience uninterrupted support and service with our round-the-clock availability, ensuring your needs are met 24/7',
-    icon: ClockIcon,
-  },
-  // language with our multi-lingual capabilities.
-  {
-    name: 'Multilingual support',
-    description:
-      'BotsApp understands diversity. Enjoy learning in your preferred language with our multi-lingual capabilities.',
-    icon: LanguageIcon,
-  },
-]
+    {
+      name: "Personalised content",
+      description:
+        "BotsApp adapts to your learning style, providing tailored responses and suggestions based on your preferences and progress",
+      icon: UserIcon,
+    },
+    {
+      name: "Round-the-Clock Availability",
+      description:
+        "Experience uninterrupted support and service with our round-the-clock availability, ensuring your needs are met 24/7",
+      icon: ClockIcon,
+    },
+    // language with our multi-lingual capabilities.
+    {
+      name: "Multilingual support",
+      description:
+        "BotsApp understands diversity. Enjoy learning in your preferred language with our multi-lingual capabilities.",
+      icon: LanguageIcon,
+    },
+  ];
   return (
     <div className="bg-custom-bg bg-repeat  px-10 sm:px-6 lg:px-8">
       <div className="flex flex-col sm:flex-row text-white h-screen items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -108,26 +107,34 @@ function Whatsapp() {
         <div className="mx-auto max-w-2xl lg:text-center">
           {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
           <p className="mt-2 text-3xl font-bold tracking-tight text-custom-main sm:text-4xl">
-              Integrating learning in whatsapp
+            Integrating learning in whatsapp
           </p>
           <p className="mt-6 text-md leading-8 text-white">
-           Whether you're on the bus, waiting in line, or simply relaxing at
-          home, your learning journey is always with you. Break free from
-          traditional constraints and embrace the flexibility of learning on
-          your terms.
+            Whether you're on the bus, waiting in line, or simply relaxing at
+            home, your learning journey is always with you. Break free from
+            traditional constraints and embrace the flexibility of learning on
+            your terms.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-12">
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16 bg-[#1E1E20] p-8 rounded-md">
+              <div
+                key={feature.name}
+                className="relative pl-16 bg-[#1E1E20] p-8 rounded-md"
+              >
                 <dt className="text-base font-bold text-lg leading-7 text-custom-main pl-3">
                   <div className="absolute left-3 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-white pl-3">{feature.description}</dd>
+                <dd className="mt-2 text-base leading-7 text-white pl-3">
+                  {feature.description}
+                </dd>
               </div>
             ))}
           </dl>

@@ -164,7 +164,6 @@ const Roadmap = () => {
                     buttonStyle="text-white p-2 w-[640px] rounded-md text-xl font-bold bg-custom-main"
                     buttonEvent={() => handleChatClick(video.url)}
                   />
-
                   {/* <button
                   // onClick={() => handleChatClick(video.url)}
                   // className="text-white ml-4 p-2 h-[60px] w-[180px] rounded-full text-2xl font-bold bg-custom-main"

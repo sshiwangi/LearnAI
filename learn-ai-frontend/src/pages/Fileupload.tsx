@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Uploadcomponent from "../components/FileUploadComponent";
+import FileUploadComponent from "../components/FileUploadComponent";
 import { useNavigate } from "react-router-dom";
 
 const FileUpload = () => {
@@ -35,7 +35,7 @@ const FileUpload = () => {
               personal Teaching Assistant
             </p>
             <div className="bg-[#6F53FF] px-20 py-10 rounded-2xl w-3/4 sm:w-auto mx-auto flex justify-center items-center">
-              <Uploadcomponent onFileUpload={handleFileUpload} />
+              <FileUploadComponent onFileUpload={handleFileUpload} />
             </div>
           </div>
         </div>

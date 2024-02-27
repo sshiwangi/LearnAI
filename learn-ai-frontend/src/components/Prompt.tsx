@@ -45,8 +45,8 @@ function Prompt({ text, id }: PromptProps) {
       const answer = data.answer;
       const assistantMessage: MessageItem = {
         role: "assistant",
-        content: input, // Replace with the content you want to display
-        answer: answer, // Pass the user's question to assistant's message
+        content: input,
+        answer: answer,
       };
 
       // if (data.answer) {

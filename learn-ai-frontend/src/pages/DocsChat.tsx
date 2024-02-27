@@ -8,37 +8,39 @@ function DocsChat() {
   const [transcript, setTranscript] = useState<string>("");
 
   useEffect(() => {
-    const fetchTranscript = async () => {
-      if (uploadedFile) {
-        try {
-          const formData = new FormData();
-          formData.append("pdfFile", uploadedFile);
-
-          const response = await fetch(
-            "https://learnai-chat-with-pdf.vercel.app/PDF/generate-transcript",
-            {
-              method: "POST",
-              body: formData,
-            }
-          );
-
-          if (!response.ok) {
-            throw new Error(
-              `Error fetching transcript. Status: ${response.status}`
-            );
-          }
-
-          const data = await response.json();
-          console.log(data.pdfText);
-          setTranscript(data.pdfText);
-        } catch (error) {
-          console.error("Error fetching transcript:", (error as Error).message);
-        }
-      }
-    };
-
     fetchTranscript();
   }, [uploadedFile]);
+
+  const fetchTranscript = async () => {
+    if (uploadedFile) {
+      try {
+        const formData = new FormData();
+        formData.append("pdfFile", uploadedFile);
+
+        const response = await fetch(
+          "https://learnai-chat-with-pdf.vercel.app/PDF/generate-transcript",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            `Error fetching transcript. Status: ${response.status}`
+          );
+        }
+
+        const data = await response.json();
+        console.log(data.pdfText);
+        setTranscript(data.pdfText);
+        // console.log(transcript);
+      } catch (error) {
+        console.error("Error fetching transcript:", (error as Error).message);
+      }
+    }
+  };
+
   return (
     <div className="flex bg-[#1E1E20]">
       <div className="w-full flex h-screen  bg-[#363435]">

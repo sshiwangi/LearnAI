@@ -150,7 +150,7 @@ const Roadmap = () => {
             )}
 
             {recommendedVideos.map((video: Video, index) => (
-              <>
+              <React.Fragment key={index}>
                 <div>
                   <img src={roadmapIcon} alt="" />
                 </div>
@@ -158,7 +158,7 @@ const Roadmap = () => {
                   {index + 1}
                 </div>
 
-                <div key={index} className="flex w-full justify-center">
+                <div className="flex w-full justify-center">
                   <YouTubeVideoPlayer
                     videoId={getVideoId(video.url)}
                     buttonStyle="text-white p-2 w-[640px] rounded-md text-xl font-bold bg-custom-main"
@@ -171,7 +171,7 @@ const Roadmap = () => {
                     Chat
                   </button> */}
                 </div>
-              </>
+              </React.Fragment>
             ))}
           </div>
         </div>

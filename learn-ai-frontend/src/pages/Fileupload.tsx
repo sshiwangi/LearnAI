@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, ChangeEvent } from "react";
-// import FileUploadComponent from "../components/FileUploadComponent";
 import { useNavigate } from "react-router-dom";
 import Image from "../assets/Import_Pdf.png";
 
@@ -57,7 +56,6 @@ const FileUpload = () => {
               personal Teaching Assistant
             </p>
             <div className="bg-[#6F53FF] px-20 py-10 rounded-2xl w-3/4 sm:w-auto mx-auto flex justify-center items-center">
-              {/* <FileUploadComponent onFileUpload={handleFileUpload} /> */}
               <>
                 <input
                   ref={fileInputRef}

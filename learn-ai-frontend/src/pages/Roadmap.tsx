@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import Flag from '../assets/flag.png';
 import YouTubeVideoPlayer from "../components/YoutubeVideoPlayer";
 import { fetchYouTubeTranscript } from "../utils/Transcript";
@@ -13,12 +13,11 @@ interface Video {
 
 const Roadmap = () => {
   const [videoText, setVideoText] = useState<string>("");
-  const [videoId, setVideoId] = useState<string>("");
+  // const [videoId, setVideoId] = useState<string>("");
 
   const [recommendedVideos, setRecommendedVideos] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [count, setCount] = useState(0);
   const [showRoadmapHeading, setShowRoadmapHeading] = useState(false);
   const navigate = useNavigate();
 
@@ -31,7 +30,7 @@ const Roadmap = () => {
       // Set the transcript text and show VideoChat component
       console.log(transcriptText);
       setVideoText(transcriptText);
-      setVideoId(videoId);
+      // setVideoId(videoId);
       console.log(videoText);
       console.log(videoId);
       navigate(`/chatwithvideo?videourl=${encodeURIComponent(videoUrl)}`);

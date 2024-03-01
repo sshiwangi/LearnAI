@@ -1,7 +1,5 @@
 import React, { FormEvent, useState } from "react";
-import YouTubeVideoPlayer from "./YoutubeVideoPlayer";
-import VideoUpload from "../pages/VideoChat";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // interface SearchBarProps
 //   onVideoLoad: (videoDetails: VideoDetails, transcript: string) => void;
 // }
@@ -17,10 +15,10 @@ interface SearchBarProps {
 
 function SearchBar({ onVideoLoad }: SearchBarProps) {
   const [youtubeUrl, setYoutubeUrl] = useState("");
-  const [videoId, setVideoId] = useState("");
+  // const [videoId, setVideoId] = useState("");
   // const [videoDetails, setVideoDetails] = useState<VideoDetails | null>(null);
-  const [transcript, setTranscript] = useState<string>("");
-  const navigate = useNavigate();
+  // const [transcript, setTranscript] = useState<string>("");
+  // const navigate = useNavigate();
   const loadVideo = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -35,14 +33,14 @@ function SearchBar({ onVideoLoad }: SearchBarProps) {
 
       // setVideoDetails(videoDetails);
       // console.log(videoDetails);
-      setTranscript(transcriptResponse.text);
-      setVideoId(transcriptResponse.id);
+      // setTranscript(transcriptResponse.text);
+      // setVideoId(transcriptResponse.id);
       onVideoLoad(transcriptResponse.text, transcriptResponse.id);
       // navigate("/videochat");
     } catch (error) {
       console.error("Error loading video:", error);
       // setVideoDetails(null);
-      setTranscript("");
+      // setTranscript("");
     }
   };
 

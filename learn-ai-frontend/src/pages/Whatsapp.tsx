@@ -1,7 +1,6 @@
 import Scan from "../assets/qr cropped 1.png";
 import { UserIcon, ClockIcon, LanguageIcon } from "@heroicons/react/24/outline";
-import React from "react";
-import mobileView from "../assets/whatsapp-pic.png";
+
 function Whatsapp() {
   const features = [
     {

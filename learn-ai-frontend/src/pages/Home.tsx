@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Homepage from "../assets/HomePage.png";
 import Scales from "../assets/scales.png";
 import { Reveal } from "../components/Reveal";
-import SparklesBackground from "../components/Sparklesbackground";
 
 export default function Home() {
   //   const [isContentLoaded, setIsContentLoaded] = useState(false);
@@ -200,13 +198,13 @@ export default function Home() {
           <div className="w-full md:w-1/2">
             <div className="bg-gray-300 h-full overflow-hidden rounded-tl-xl rounded-bl-xl">
               <div className="flex justify-center items-center h-full">
-                 <iframe 
-        width="100%" 
-        height="100%" 
-        src="https://www.youtube.com/embed/lhgEQvd4jpU?si=QFfKgPC3VdgvQFPw" 
-        title="YouTube video player" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" > 
-      </iframe>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/lhgEQvd4jpU?si=QFfKgPC3VdgvQFPw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
               </div>
             </div>
           </div>

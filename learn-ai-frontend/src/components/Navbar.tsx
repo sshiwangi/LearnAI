@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../assets/aicrafttube-log.png";
 import LoginDialogue from "./LoginDialogue";
 import { Link, useLocation } from "react-router-dom";
 
@@ -20,9 +19,9 @@ export default function Navbar() {
   const location = useLocation();
   const [dialogueOpen, setDialogueOpen] = useState(false);
 
-  function showLoginDialogue() {
-    setDialogueOpen(true);
-  }
+  // function showLoginDialogue() {
+  //   setDialogueOpen(true);
+  // }
   function closeLoginDialogue() {
     setDialogueOpen(false);
   }

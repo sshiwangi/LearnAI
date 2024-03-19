@@ -29,11 +29,11 @@ export default function Navbar() {
     <Disclosure as="nav" className="bg-custom-bg">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
+            <div className="relative flex-row-reverse sm:flex-row flex h-16 items-center justify-between">
               <div className=" inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 ">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -71,13 +71,13 @@ export default function Navbar() {
               </div>
               <div
                 // onClick={showLoginDialogue}
-                className="absolute inset-y-0 text-white right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hover:cursor-pointer"
+                className="absolute hidden inset-y-0 text-white right-0  items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hover:cursor-pointer"
               >
                 {/* <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 > */}
-                Login
+                {/* Login */}
                 {/* <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />

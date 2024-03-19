@@ -2,6 +2,19 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@media screen and (max-width: 500px) {
+  .custom-style {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .custom-btn-style {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 /* body {
   overflow: hidden; 
 } */

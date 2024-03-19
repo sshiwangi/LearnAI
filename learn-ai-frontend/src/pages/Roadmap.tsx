@@ -82,18 +82,18 @@ const Roadmap = () => {
 
   return (
     <div className=" bg-custom-bg text-white ">
-      <div className=" pt-20 pb-5 flex justify-center items-center flex-col">
-        <h1 className="text-6xl font-bold mb-4 flex text-center w-[600px] items-center">
+      <div className=" pt-20 px-5 pb-5 flex justify-center items-center flex-col">
+        <h1 className="text-3xl sm:text-5xl w-[300px] sm:w-[500px] md:w-[600px] md:text-6xl font-bold mb-4 flex text-center items-center">
           Your Ultimate Study Roadmap for Academic Excellence
         </h1>
         <div className="flex items-center pt-10 pb-5 w-full justify-center">
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="w-3/4 bg-white rounded-lg py-2 px-3 sm:w-1/2 flex items-center justify-center">
             <input
               type="text"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Type your query here"
-              className="rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 border text-black border-gray-300 px-3 py-2 w-full mr-2"
+              className="rounded-lg bg-gray-50 order text-black px-3 py-2 w-full mr-2"
             />
             <button
               onClick={handleSearchClick}

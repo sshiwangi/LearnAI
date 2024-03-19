@@ -81,7 +81,7 @@ function Prompt({ text, id }: PromptProps) {
   }
 
   return (
-    <div className="h-full relative bg-custom-promptbg p-5 w-[90%] rounded-md">
+    <div className="min-h-[400px] xl:h-full relative bg-custom-promptbg p-5 w-[90%] rounded-md">
       <div className="flex h-full flex-col">
         {/* <h3>start Chatting</h3> */}
         <div className="h-full">

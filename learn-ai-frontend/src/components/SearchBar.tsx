@@ -78,7 +78,7 @@ function SearchBar({ onVideoLoad }: SearchBarProps) {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <form
-        className="w-1/2 mb-10 flex items-center justify-center"
+        className="w-[80%] sm:w-1/2 mb-10 flex items-center justify-center"
         onSubmit={loadVideo}
       >
         <label

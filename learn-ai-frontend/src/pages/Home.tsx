@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Homepage from "../assets/HomePage.png";
-import Scales from "../assets/scales.png";
 import { Reveal } from "../components/Reveal";
 import useCustomStyle from "../hooks/useCustomStyle";
 

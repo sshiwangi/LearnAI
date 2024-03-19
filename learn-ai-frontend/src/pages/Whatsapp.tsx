@@ -131,7 +131,7 @@ function Whatsapp() {
                 key={feature.name}
                 className="relative pl-16 bg-[#1E1E20] p-8 rounded-md"
               >
-                <dt className="text-base font-bold text-lg leading-7 text-custom-main pl-3">
+                <dt className=" font-bold text-lg leading-7 text-custom-main pl-3">
                   <div className="absolute left-3 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <feature.icon
                       className="h-6 w-6 text-white"

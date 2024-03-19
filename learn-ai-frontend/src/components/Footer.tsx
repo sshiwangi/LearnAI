@@ -1,4 +1,4 @@
-import logoImage from "../assets/aicrafttube-log.png";
+// import logoImage from "../assets/aicrafttube-log.png";
 import linkedin from "../assets/LinkedIn 2.png";
 import youtube from "../assets/YouTube.png";
 import twitter from "../assets/TwitterX.png";
@@ -53,7 +53,7 @@ export default function Example() {
                 {/* <img src={logoImage} alt="Logo" className="w-24 mb-4" /> */}
               </div>
 
-              <div className="nav-items flex sm:space-x-5 lg:space-x-10 hidden sm:block">
+              <div className="nav-items sm:space-x-5 lg:space-x-10 hidden sm:block">
                 <a
                   href="#about"
                   className="hover:text-gray-400  text-lg text-white"

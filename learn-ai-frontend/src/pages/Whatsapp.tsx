@@ -24,20 +24,29 @@ function Whatsapp() {
     },
   ];
   return (
-    <div className="bg-custom-bg bg-repeat  px-10 sm:px-6 lg:px-8">
-      <div className="flex flex-col sm:flex-row text-white h-screen items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <div className="flex flex-col justify-center sm:w-1/2 gap-6 sm:gap-5">
-          <h1 className="text-5xl font-bold">Education at Your Fingertips!</h1>
-          <p className="w-[500px] text-md">
+    <div className="bg-custom-bg bg-repeat pt-10 md:pt-5  px-10 sm:px-6 lg:px-8">
+      <div className="flex gap-6 flex-col md:flex-row text-white h-screen md:items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col justify-center w-full md:w-1/2 gap-6 sm:gap-5">
+          <h1 className="w-full lg:w-[500px] text-6xl lg:text-7xl font-bold">
+            Education at Your Fingertips!
+          </h1>
+          <p className="w-3/4 lg:w-[500px] text-md">
             Bringing learning to your fingertips at your convenience through
             your favorite app - WhatsApp
           </p>
-          <button className=" md:w-1/2 lg:w-1/3 w-full items-center justify-center hover:opacity-75 p-3 font-bold text-lg rounded-md bg-custom-main mb-5">
+          <button className=" md:w-1/2 lg:w-1/3 w-3/4 items-center justify-center hover:opacity-75 p-3 font-bold text-lg rounded-md bg-custom-main mb-5">
             Scan Now
           </button>
         </div>
-        <div className="w-full sm:w-[300px] h-[300px] shadow-card-shadow mt-4">
-          <img src={Scan} alt="Scan" className="w-full h-full " />
+        <div
+          style={{ marginLeft: "0" }}
+          className="py-4 md:w-[300px] h-[300px] mt-4"
+        >
+          <img
+            src={Scan}
+            alt="Scan"
+            className="w-[300px] sm:w-1/2 md:w-full md:h-full "
+          />
         </div>
       </div>
       {/* <div className=" text-white px-40">
@@ -102,7 +111,7 @@ function Whatsapp() {
         </div>
       </div>*/}
       {/* <div className="bg-[#1E1E20] py-24 sm:py-32"> */}
-      <div className="mx-auto max-w-7xl px-6 pb-20">
+      <div className="mx-auto mt-20 max-w-7xl pb-20">
         <div className="mx-auto max-w-2xl lg:text-center">
           {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
           <p className="mt-2 text-3xl font-bold tracking-tight text-custom-main sm:text-4xl">

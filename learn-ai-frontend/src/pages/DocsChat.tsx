@@ -42,7 +42,7 @@ function DocsChat() {
   };
 
   return (
-    <div className="flex bg-[#1E1E20]">
+    <div className="flex flex-col lg:flex-row bg-[#1E1E20]">
       <div className="w-full flex h-screen  bg-[#363435]">
         <div className="py-10 px-10 w-full">
           {uploadedFile && (

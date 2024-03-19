@@ -6,7 +6,7 @@ interface videoProps {
 
 function YouTubeVideoPlayerVideoChat({ videoId }: videoProps) {
   return (
-    <div className=" h-full w-[57%] flex flex-col justify-center">
+    <div className=" h-full w-full xl:w-[57%] items-center flex flex-col justify-center">
       <YouTube videoId={videoId} />
     </div>
   );

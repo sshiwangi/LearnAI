@@ -48,8 +48,9 @@ export default function Example() {
         <footer className="py-8 ">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-white flex flex-col items-center">
             <div className="flex justify-between max-w-5xl w-full">
-              <div className="logo-items mr-4">
-                <img src={logoImage} alt="Logo" className="w-24 mb-4" />
+              <div className="logo-items font-bold mr-4 text-xl">
+                Learn<span className="text-custom-main">Ai</span>
+                {/* <img src={logoImage} alt="Logo" className="w-24 mb-4" /> */}
               </div>
 
               <div className="nav-items flex sm:space-x-5 lg:space-x-10 hidden sm:block">

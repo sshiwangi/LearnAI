@@ -3,9 +3,9 @@ interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%";
 }
-export const Reveal = ({ children, width = "fit-content" }: Props) => {
+export const Reveal = ({ children }: Props) => {
   return (
-    <div style={{ position: "relative", width, overflow: "hidden" }}>
+    <div style={{ position: "relative" }}>
       <motion.div
         variants={{
           hidden: {
